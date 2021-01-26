@@ -7,6 +7,8 @@ then
     exit 1
 fi
 
+cd ..
+
 echo "Importing workspace /Shared/$SUBDIR/"
 databricks workspace import_dir workspace /Shared/$SUBDIR/ --overwrite 
 
