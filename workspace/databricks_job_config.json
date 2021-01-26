@@ -1,0 +1,24 @@
+{
+    "name": "cicd",
+    "new_cluster": {
+      "spark_version": "7.4.x-scala2.12",
+      "spark_conf": {
+        "spark.databricks.delta.preview.enabled": "true"
+      },
+      "node_type_id": "Standard_DS3_v2",
+      "spark_env_vars": {
+        "PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+      },
+      "enable_elastic_disk": true,
+      "azure_attributes": {
+        "availability": "ON_DEMAND_AZURE"
+      },
+      "num_workers": 1
+    },
+    "email_notifications": {},
+    "timeout_seconds": 0,
+    "notebook_task": {
+      "notebook_path": "/Shared/cicd-example/run"
+    },
+    "max_concurrent_runs": 1
+  }
