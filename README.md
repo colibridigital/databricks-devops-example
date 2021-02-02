@@ -16,5 +16,5 @@ Assumming you have configured the `databricks` cli, running `databricks-deploy-r
 3. Convert `run.py` in a Databricks notebook and then deploy a job.
 4. Execute the job.
 
-**Note:** Make sure that the notebook path proeprty in the job JSON configuration matches the path and name of where the code is uplaoded to:
+**Note:** Make sure that the notebook path property in the job JSON configuration matches the path and name of where the code is uplaoded to:
 `"notebook_path": "/Shared/cicd-example/run"`
